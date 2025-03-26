@@ -5,21 +5,21 @@
 from validations import validation_for_a, validation_for_b, validation_for_c, validation_for_d
 
 
-def natural_numbers_count(n):
+def natural_numbers_count(n: int):
     # Validation
     validation_for_a(n)
     # Code
     return n - 1
 
 
-def splitted_texts_by_numbers(n, text, ignore_empty_text=False):
+def splitted_texts_by_numbers(n: int, text:str, ignore_empty_text=False):
     # Validation
     validation_for_b(n, text, ignore_empty_text)
     # Code
     return ''.join(f'{text}+' for _ in range(n))[:-1]
 
 
-def minutes_to_time(m):
+def minutes_to_time(m: int):
     # Validation
     validation_for_c(m)
     # Code
@@ -28,7 +28,7 @@ def minutes_to_time(m):
     return f'{hours} {minutes}'
 
 
-def number_powers_count(a, b):
+def number_powers_count(a: int, b: int):
     # Validation
     validation_for_d(a, b)
     # Code
