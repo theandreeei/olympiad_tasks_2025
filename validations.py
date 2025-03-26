@@ -2,13 +2,13 @@ import sys
 
 
 # Individual Validations
-def validation_for_a(n):
+def validation_for_a(n: int):
     is_int(n)
     if n <= 1:
         _exit('Аргумент n має бути більшим за 1.')
 
 
-def validation_for_b(n, text, ignore_empty_text):
+def validation_for_b(n: int, text: str, ignore_empty_text: bool):
     is_int(n)
     if n <= 1:
         _exit('Аргумент n має бути більшим за 1.')
@@ -18,13 +18,13 @@ def validation_for_b(n, text, ignore_empty_text):
         _exit('Аргумент text з типом str не повинен бути порожнім.')
 
 
-def validation_for_c(m):
+def validation_for_c(m: int):
     is_int(m)
     if not 0 < m < 1440:
         _exit('Аргумент m має бути в діапазоні від 0 до 1440.')
 
 
-def validation_for_d(a, b):
+def validation_for_d(a: int, b: int):
     is_int(a)
     is_int(b)
     if not 1 <= a <= b:
