@@ -1,8 +1,7 @@
 '''
 Робота: Мордач Андрій, 10-А, школа номер 23
-Повна версія (як модуль, де всі завдання) знаходиться на https://
+Повна версія (як модуль, де всі завдання) знаходиться на https://github.com/theandreeei/olympiad_tasks_2025
 '''
-
 from validations import validation_for_a, validation_for_b, validation_for_c, validation_for_d
 
 
