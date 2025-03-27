@@ -33,7 +33,7 @@ def validation_for_d(a: int, b: int):
         _exit('Аргументи a, b мають бути в одному рядку через промiжок (1 ≤ a ≤ b).')
 
 
-def validation_for_e(numbers_str: str):
+def validation_for_e(numbers_str: str): 
     if not isinstance(numbers_str, str):
         _exit('Аргумент numbers_str повинен бути тільки типом str, наприклад "1 3 5 7 9 11".')
     try:

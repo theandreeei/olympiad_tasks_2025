@@ -71,7 +71,7 @@ def number_powers_count(a: int, b: int):
             result += 1
 
         current_power += 1
-    return result
+    return result 
 
 
 def find_max_and_paired_number(numbers_str: str):
