@@ -11,6 +11,7 @@ def natural_numbers_count(n: int):
     ральних чисел менших n.
 
     Аргументи: n: int - натуральне число.
+    Повертає: число, int.
     '''
     # Validation
     validation_for_a(n)
@@ -27,6 +28,7 @@ def splitted_texts_by_numbers(n: int, text: str, ignore_empty_text: bool = False
     Аргументи: n: int - натуральне число;
                text: str - текст з латинських лiтер;
                ignore_empty_text: bool = False - можливість допускати пусті тексти (аргумент text). За замовчуванням False.
+    Повертає: текст, str.
     '''
     # Validation
     validation_for_b(n, text, ignore_empty_text)
