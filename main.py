@@ -2,10 +2,11 @@
 Робота: Мордач Андрій, 10-А, школа номер 23
 Повна версія (як модуль, де всі завдання) знаходиться на https://github.com/theandreeei/olympiad_tasks_2025
 '''
+from typing import Union
 from validations import validation_for_a, validation_for_b, validation_for_c, validation_for_d, validation_for_e, validation_for_f
 
 
-def natural_numbers_count(n: int):
+def natural_numbers_count(n: int) -> int:
     '''
     Програма на входi приймає натуральне число n. Потрiбно вивести кiлькiсть нату-
     ральних чисел менших n.
@@ -20,7 +21,7 @@ def natural_numbers_count(n: int):
     return n - 1
 
 
-def splitted_texts_by_numbers(n: int, text: str, ignore_empty_text: bool = False):
+def splitted_texts_by_numbers(n: int, text: str, ignore_empty_text: bool = False) -> str:
     '''
     На вхiд програми подається натуральне число n та деякий текст, наприклад Real.
     Потрiбно повторити цей текст n раз в одному рядку, роздiливши копiї символом плюс "+".
@@ -37,12 +38,12 @@ def splitted_texts_by_numbers(n: int, text: str, ignore_empty_text: bool = False
     return ''.join(f'{text}+' for _ in range(n))[:-1]
 
 
-def minutes_to_time(m: int):
+def minutes_to_time(m: int) -> str:
     '''
     Вiд початку доби пройшло m хвилин. Скільки годин i хвилин показує годинник на цей момент?
 
     Аргументи: m: int - ціле число, хв.
-    Повертає: два числа, int.
+    Повертає: два числа, str.
     '''
     # Validation
     validation_for_c(m)
@@ -53,7 +54,7 @@ def minutes_to_time(m: int):
     return f'{hours} {minutes}'
 
 
-def number_powers_count(a: int, b: int):
+def number_powers_count(a: int, b: int) -> int:
     '''
     Потрiбно знайти i вивести кiлькiсть степенiв двiйки, що лежать на вiдрiзку [a,b]. Одиниця, як 2⁰ = 1 не враховується. (1 ≤ a ≤ b).
 
@@ -76,7 +77,7 @@ def number_powers_count(a: int, b: int):
     return result 
 
 
-def find_max_and_paired_number(numbers_str: str):
+def find_max_and_paired_number(numbers_str: str) -> Union[int, str]:
     '''
     Дано масив з n цiлих чисел. Знайти найбiльше парне число. Якщо таких чисел не iснує виведiть NO.
 
@@ -93,14 +94,14 @@ def find_max_and_paired_number(numbers_str: str):
     return max(filtered_numbers) if len(filtered_numbers) > 0 else 'NO'
 
 
-def all_double_sum_numbers(m: int):
+def all_double_sum_numbers(m: int) -> str:
     '''
     Вивести всi двозначнi числа, що складаються з рiзних цифр, сума яких дорiвнює m.
 
     Аргументи: m: int - натуральне число (0 ≤ m ≤ 20).
-    Повертає: список чисел у виді тексту або "No" str.
+    Повертає: список чисел у виді тексту або "No", str.
     '''
-    # Validation and Get
+    # Validation
     validation_for_f(m)
 
     # Code
