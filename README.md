@@ -30,10 +30,13 @@ python main.py
 ### Дерево (не включаючи .gitignore та README.md):
 ```
     olympiad_tasks_2025/
+    ├── Proofs/
     ├── main.py
     └── validations.py
 ```
 
+### Докази (Proofs)
+У папці `/Proofs/` знаходяться докази успішно виповнених тестів на [https://basecamp.eolymp.com/](https://basecamp.eolymp.com/) у вигляді фото для кожної задачі.
 
 ## Credits
 
